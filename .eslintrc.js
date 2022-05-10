@@ -47,5 +47,6 @@ module.exports = {
         json: 'always',
       },
     ],
+    'import/prefer-default-export': ['off'],
   },
 };

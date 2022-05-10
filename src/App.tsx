@@ -1,31 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Board from './components/Board';
 
 export default function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <React.StrictMode>
-      <div
-        className="text-center"
-      >
-        <header
-          className="m-4"
-        >
-          <p>
-            Hello Vite + React!
-          </p>
-          <p>
-            <button
-              type="button"
-              className="border border-gray-400 rounded px-2 py-2 mt-4 hover:(bg-teal-400 border-teal-400)"
-              onClick={() => setCount(count + 1)}
-            >
-              count is:
-              {count}
-            </button>
-          </p>
-        </header>
+    <div className="h-[100%] bg-sky-700 overflow-hidden flex flex-col">
+      <div className="h-44px text-light-300">
+        I am menu
       </div>
-    </React.StrictMode>
+      <div className="flex-1 relative">
+        <Board />
+      </div>
+    </div>
   );
 }
