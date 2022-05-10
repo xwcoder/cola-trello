@@ -1,3 +1,3 @@
-# cola-trllo
+# cola-trello
 
 A project to clone Trello's interaction.
