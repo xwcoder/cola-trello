@@ -30,8 +30,6 @@ export default function ListBody({ cards, index }: Props) {
 
       posIndex = y >= (rect.top + rect.height / 2) ? cardIndex + 1 : cardIndex;
 
-      console.log('cardIndex:', cardIndex, posIndex);
-
       setPlaceholderIndex(posIndex);
     },
     drop: (_, monitor) => {
